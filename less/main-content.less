@@ -1,0 +1,139 @@
+// ABOUT.HTML
+.about-body{
+    margin: 5px;
+    
+    h1{
+        text-align: center;
+        font-size: 5rem;
+        font-family: new_walt_disney_uiregular;
+    }
+    .quote{
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 25px;
+        margin: 0px 10px;
+    }
+
+    .cards-container{
+        .flex-layout(center, center);
+        flex-wrap: wrap;
+        
+
+        .single-card{
+            position: relative;
+            .flex-layout(center, center);
+            flex-direction: column;
+            width: 300px;
+            height: auto;
+            border-radius: .4rem;
+            background-color: 	#eaeaea;
+            text-align: center;
+            margin: 2rem;
+            padding: 20px;
+            transition: .3s;
+            box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+
+            h2{
+                font-size: 3.2rem;
+                font-weight: 500;
+                line-height: 3.2rem;
+                margin-bottom: 2rem;
+                font-family: new_waltographregular;
+            }
+
+            h3 {
+                font-size: 1.6rem;
+                font-weight: 300;
+            }
+
+            .team-img{
+                .flex-layout(center, center);
+                width: 100px;
+                height: 100px;
+                border: 6px solid #ddd;
+                border-radius: 50%;
+                margin-bottom: 1rem;
+                padding: 20px;
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            .social-media{
+
+                .sm-list{
+                    width: 100%;
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding: 20px 0;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    border-top: 1px solid rgba(0,0,0,.1);
+
+                    i {
+                        font-size: 3.3rem;
+                        transition: color .5s;
+                        padding: 0rem .5rem;
+                        transition: all .5s;
+                    }
+
+                }
+            }
+        }
+    }
+}
+// team-images
+.single-card:nth-child(1) .team-img{
+    background-image: url(../img/about-img/riznis200.png);
+}
+.single-card:nth-child(2) .team-img{
+    background-image: url(../img/about-img/anderson200.png);
+}
+.single-card:nth-child(3) .team-img{
+    background-image: url(../img/about-img/fisher200.png);
+}
+.single-card:nth-child(4) .team-img{
+    background-image: url(../img/about-img/loveless200.png);
+}
+.single-card:nth-child(5) .team-img{
+    background-image: url(../img/about-img/simionescu200.png);
+}
+.single-card:nth-child(6) .team-img{
+    background-image: url(../img/about-img/bowcott200.png);
+}
+.single-card:nth-child(7) .team-img{
+    background-image: url(../img/about-img/doyle200.png);
+}
+// team icons
+.fa-linkedin{
+  color: @linkedin;
+}
+.fa-twitter-square{
+  color: @twitter;
+}
+.fa-address-card{
+    color: @lambda;
+}
+.fa-github-square{
+    color: black;
+}
+// actions
+i:hover{
+    transform: translateY(-5px);
+    box-shadow: .5rem .5rem 2rem rgba(0,0,0,.2)
+}
+i:active{
+    transform: translateY(0);
+    box-shadow: none;
+  }
+.single-card:hover{
+    background: rgb(17,10,126);
+    background: linear-gradient(0deg, rgba(17,10,126,1) 0%, rgba(34,193,195,1) 81%);
+}
+//   media queries
+@media @tablet {
+    
+}
