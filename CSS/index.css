@@ -319,6 +319,57 @@ template {
   font-weight: normal;
   font-style: normal;
 }
+#page-nav-wrap label {
+  color: #78BEE7;
+  background: #253b57;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+label,
+#hamburger {
+  display: none;
+}
+#page-nav-wrap,
+#page-nav {
+  background: #eaeaea;
+}
+#page-nav {
+  display: flex;
+  flex-direction: row;
+}
+#page-nav a {
+  color: #253b57;
+  padding: 20px;
+  font-size: 22px;
+  text-decoration: none;
+  text-align: center;
+  flex-grow: 1;
+  flex-basis: 0;
+  transition: all ease 0.3s;
+}
+#page-nav a:hover {
+  background: #78BEE7;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 500px) {
+  #page-nav-wrap label {
+    display: inline-block;
+  }
+  #page-nav {
+    flex-direction: column;
+    position: fixed;
+    top: 50px;
+    width: 320px;
+    left: -320px;
+  }
+  #page-nav a {
+    padding: 10px;
+  }
+  #page-nav-wrap input:checked ~ #page-nav {
+    left: 0;
+  }
+}
 .about-body {
   margin: 5px;
 }
