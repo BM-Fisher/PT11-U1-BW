@@ -1,3 +1,146 @@
+// index.html
+// intro section
+.intro{
+    width: 100%;
+    background-color: @top-blue;
+    
+
+    h1{
+        text-align: center;
+        font-size: 3rem;
+        font-family: 'new_walt_disney_uiregular';
+        padding-top: 1.5rem;
+        margin: 15px 0px;
+        color: @ptext;
+    }
+
+    p{
+        text-align: center;
+        font-size: 1.6rem;
+        padding-bottom: 1.5rem;
+        margin: 0px 5px;
+        color: @castle-grey;
+        
+    }
+}
+// main content
+.some-page-wrapper {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    background-color: red;
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+
+            .buddy-img {
+                background-image: url(../IMG/index-img/alien-ride.jpg);
+                .column-img;
+            }
+
+            .buddy-txt {
+                .column-txt;
+
+                h2{
+                    .column-h2;
+                }
+
+                p{
+                    .column-p;
+                }
+            }
+
+            .swap-txt {
+                .column-txt;
+
+                h2{
+                    .column-h2;
+                }
+
+                p{
+                    .column-p;
+                }
+            }
+
+            .swap-img {
+                background-image: url(../IMG/index-img/princess.jpg);
+                .column-img;
+            }
+
+            .event-img {
+               background-image: url(../IMG/index-img/childcare.jpg);
+               .column-img;
+            }
+              
+              .event-txt {
+                .column-txt;
+
+                h2{
+                    .column-h2;
+                }
+
+                p{
+                    .column-p;
+                }
+            }
+        }
+    }
+}
+
+.discussion-board{
+    height: 200px;
+    margin: 0px;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(22,30,167,1) 100%);
+    
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        color: @castle-grey;
+        margin-top: 0px;
+        padding-top: 1rem;
+        
+    }
+
+    p{
+        font-size: 1.6rem;
+        color: @castle-grey;
+        padding: 0rem .5rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    button{
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.6rem;
+        padding: 15px;
+        border-radius: 10px;
+        color: @main-text;
+        background-color: @castle-grey;
+
+        &:hover{
+           background-color: @nav-hover;
+           text-transform: uppercase;
+        }
+    }
+}
+  
+  
+
+
+  
+
+
 // ABOUT.HTML
 .about-body{
     margin: 5px;
@@ -89,10 +232,10 @@
 .single-card:nth-child(1) .team-img{
     background-image: url(../img/about-img/riznis200.png);
 }
-.single-card:nth-child(2) .team-img{
+.single-card:nth-child(3) .team-img{
     background-image: url(../img/about-img/anderson200.png);
 }
-.single-card:nth-child(3) .team-img{
+.single-card:nth-child(2) .team-img{
     background-image: url(../img/about-img/fisher200.png);
 }
 .single-card:nth-child(4) .team-img{
