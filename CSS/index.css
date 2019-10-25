@@ -9,6 +9,9 @@
   font-size: 2rem;
   color: #253b57;
 }
+.h2-margin-d {
+  margin: 55px 0px 25px 0px;
+}
 .column-txt {
   background-color: #ffffff;
   height: 125px;
@@ -537,84 +540,38 @@ label,
 }
 @media (min-width: 925px) {
   .some-page-wrapper {
-    margin-top: 15px;
-    margin-bottom: 0px;
-    background-color: red;
+    background-color: #ffffff;
   }
   .some-page-wrapper .row {
-    display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
   }
   .some-page-wrapper .row .column {
-    display: flex;
-    flex-direction: column;
     flex-basis: 100%;
     flex: 0 33.33%;
-  }
-  .some-page-wrapper .row .column .buddy-img {
-    background-image: url(../IMG/index-img/alien-ride.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 250px;
   }
   .some-page-wrapper .row .column .buddy-txt {
     background-color: #ffffff;
     height: 250px;
   }
   .some-page-wrapper .row .column .buddy-txt h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: #253b57;
+    margin: 55px 0px 25px 0px;
   }
   .some-page-wrapper .row .column .buddy-txt p {
-    font-size: 1.6rem;
-    color: #253b57;
-    padding: 0rem 0.5rem;
-    text-align: center;
+    padding: 0px 10px;
   }
   .some-page-wrapper .row .column .swap-txt {
     background-color: #ffffff;
     height: 250px;
   }
   .some-page-wrapper .row .column .swap-txt h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: #253b57;
-  }
-  .some-page-wrapper .row .column .swap-txt p {
-    font-size: 1.6rem;
-    color: #253b57;
-    padding: 0rem 0.5rem;
-    text-align: center;
-  }
-  .some-page-wrapper .row .column .swap-img {
-    background-image: url(../IMG/index-img/princess.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 250px;
-  }
-  .some-page-wrapper .row .column .event-img {
-    background-image: url(../IMG/index-img/childcare.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    height: 250px;
+    margin: 65px 0px 25px 0px;
   }
   .some-page-wrapper .row .column .event-txt {
     background-color: #ffffff;
     height: 250px;
   }
   .some-page-wrapper .row .column .event-txt h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: #253b57;
-  }
-  .some-page-wrapper .row .column .event-txt p {
-    font-size: 1.6rem;
-    color: #253b57;
-    padding: 0rem 0.5rem;
-    text-align: center;
+    margin: 55px 0px 25px 0px;
   }
   .row :nth-child(1) {
     order: 1;
@@ -633,6 +590,15 @@ label,
   }
   .row :nth-child(6) {
     order: 5;
+  }
+  .discussion-board h2 {
+    padding-top: 1.7rem;
+  }
+  .discussion-board p {
+    padding: 0rem 3rem;
+  }
+  .discussion-board button {
+    padding: 20px 30px;
   }
 }
 .about-body {
@@ -761,7 +727,6 @@ i:active {
 }
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 15px;
   font-size: 1.6rem;
-  margin-top: 20px;
 }

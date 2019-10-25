@@ -145,78 +145,42 @@
 
 // MEDIA QUERIES
 @media @desktop{
+    // main content
     .some-page-wrapper {
-        margin-top: 15px;
-        margin-bottom: 0px;
-        background-color: red;
+        background-color: #ffffff;
 
         .row {
-            display: flex;
-            // c
             flex-direction: row;
-            flex-wrap: wrap;
-            width: 100%;
-            
 
             .column {
-                display: flex;
-                flex-direction: column;
-                // c
                 flex-basis: 100%;
-                // c
                 flex: 0 33.33% ;
 
-                .buddy-img {
-                    background-image: url(../IMG/index-img/alien-ride.jpg);
-                    .column-img;
-                }
-
                 .buddy-txt {
-                    // c
                     .column-txt-d;
                     
                     h2{
-                        .column-h2;
+                        .h2-margin-d;     
                     }
 
                     p{
-                        .column-p;
+                        padding: 0px 10px;
                     }
                 }
 
                 .swap-txt {
-                    // 
                     .column-txt-d;
 
                     h2{
-                        .column-h2;
+                        margin: 65px 0px 25px 0px;
                     }
-
-                    p{
-                        .column-p;
-                    }
-                }
-
-                .swap-img {
-                    background-image: url(../IMG/index-img/princess.jpg);
-                    .column-img;
-                }
-
-                .event-img {
-                background-image: url(../IMG/index-img/childcare.jpg);
-                .column-img;
                 }
                 
                 .event-txt {
-                    // c
                     .column-txt-d;
 
                     h2{
-                        .column-h2;
-                    }
-
-                    p{
-                        .column-p;
+                        .h2-margin-d;
                     }
                 }
             }
@@ -229,6 +193,23 @@
     .row :nth-child(4) {order: 3;}
     .row :nth-child(5) {order: 6;}
     .row :nth-child(6) {order: 5;}
+
+    // lower content
+    .discussion-board{
+        
+        h2{
+            padding-top: 1.7rem;
+            
+        }
+    
+        p{
+            padding: 0rem 3rem;
+        }
+    
+        button{
+            padding: 20px 30px;
+        }
+    }
 }
   
 
