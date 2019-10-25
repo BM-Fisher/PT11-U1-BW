@@ -13,6 +13,10 @@
   background-color: #ffffff;
   height: 125px;
 }
+.column-txt-d {
+  background-color: #ffffff;
+  height: 250px;
+}
 .column-img {
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -518,15 +522,118 @@ label,
   display: block;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.6rem;
   padding: 15px;
   border-radius: 10px;
-  color: #253b57;
   background-color: #E0E4E9;
 }
 .discussion-board button:hover {
   background-color: #78BEE7;
   text-transform: uppercase;
+}
+.discussion-board button a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #253b57;
+}
+@media (min-width: 925px) {
+  .some-page-wrapper {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    background-color: red;
+  }
+  .some-page-wrapper .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .some-page-wrapper .row .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 0 33.33%;
+  }
+  .some-page-wrapper .row .column .buddy-img {
+    background-image: url(../IMG/index-img/alien-ride.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 250px;
+  }
+  .some-page-wrapper .row .column .buddy-txt {
+    background-color: #ffffff;
+    height: 250px;
+  }
+  .some-page-wrapper .row .column .buddy-txt h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #253b57;
+  }
+  .some-page-wrapper .row .column .buddy-txt p {
+    font-size: 1.6rem;
+    color: #253b57;
+    padding: 0rem 0.5rem;
+    text-align: center;
+  }
+  .some-page-wrapper .row .column .swap-txt {
+    background-color: #ffffff;
+    height: 250px;
+  }
+  .some-page-wrapper .row .column .swap-txt h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #253b57;
+  }
+  .some-page-wrapper .row .column .swap-txt p {
+    font-size: 1.6rem;
+    color: #253b57;
+    padding: 0rem 0.5rem;
+    text-align: center;
+  }
+  .some-page-wrapper .row .column .swap-img {
+    background-image: url(../IMG/index-img/princess.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 250px;
+  }
+  .some-page-wrapper .row .column .event-img {
+    background-image: url(../IMG/index-img/childcare.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 250px;
+  }
+  .some-page-wrapper .row .column .event-txt {
+    background-color: #ffffff;
+    height: 250px;
+  }
+  .some-page-wrapper .row .column .event-txt h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #253b57;
+  }
+  .some-page-wrapper .row .column .event-txt p {
+    font-size: 1.6rem;
+    color: #253b57;
+    padding: 0rem 0.5rem;
+    text-align: center;
+  }
+  .row :nth-child(1) {
+    order: 1;
+  }
+  .row :nth-child(2) {
+    order: 4;
+  }
+  .row :nth-child(3) {
+    order: 2;
+  }
+  .row :nth-child(4) {
+    order: 3;
+  }
+  .row :nth-child(5) {
+    order: 6;
+  }
+  .row :nth-child(6) {
+    order: 5;
+  }
 }
 .about-body {
   margin: 5px;

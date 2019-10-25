@@ -41,43 +41,31 @@
   
 //   Media Queries!!!!
 //   Mobile
-  @media only screen and (max-width: 500px) {
-    // Show hamburgerlar 
-    #page-nav-wrap label {
-      display: inline-block;
-    }
-    // Show/hide menu on click 
-    #page-nav {
-    //Collapse menu 
-      flex-direction: column;
-    //Hide menu to left side
-      position: fixed;
-      top: 50px;
-      width: 320px;
-      left: -320px;
+@media only screen and (max-width: 500px) {
+  // Show hamburgerlar 
+  #page-nav-wrap label {
+    display: inline-block;
+  }
+  // Show/hide menu on click 
+  #page-nav {
+  //Collapse menu 
+    flex-direction: column;
+  //Hide menu to left side
+    position: fixed;
+    top: 50px;
+    width: 320px;
+    left: -320px;
 
-      a{
-          padding: 10px;
-          font-size: 1.8rem;
-      }
-    }
-    #page-nav-wrap input:checked ~ #page-nav {
-    //Show menu 
-      left: 0;
+    a{
+        padding: 10px;
+        font-size: 1.8rem;
     }
   }
-
-//   picture
-// .flex-layout(center, center);
-//                 width: 100px;
-//                 height: 100px;
-//                 border: 6px solid #ddd;
-//                 border-radius: 50%;
-//                 margin-bottom: 1rem;
-//                 padding: 20px;
-//                 -webkit-background-size: cover;
-//                 background-size: cover;
-//                 background-position: center center;
+  #page-nav-wrap input:checked ~ #page-nav {
+  //Show menu 
+    left: 0;
+  }
+}
 
 // top-img
 .head-img{

@@ -122,19 +122,114 @@
         display:block;
         margin-left: auto;
         margin-right: auto;
-        font-size: 1.6rem;
         padding: 15px;
         border-radius: 10px;
-        color: @main-text;
         background-color: @castle-grey;
 
         &:hover{
            background-color: @nav-hover;
            text-transform: uppercase;
         }
+
+        a{
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: @main-text;
+        }
     }
 }
   
+
+
+
+
+// MEDIA QUERIES
+@media @desktop{
+    .some-page-wrapper {
+        margin-top: 15px;
+        margin-bottom: 0px;
+        background-color: red;
+
+        .row {
+            display: flex;
+            // c
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            
+
+            .column {
+                display: flex;
+                flex-direction: column;
+                // c
+                flex-basis: 100%;
+                // c
+                flex: 0 33.33% ;
+
+                .buddy-img {
+                    background-image: url(../IMG/index-img/alien-ride.jpg);
+                    .column-img;
+                }
+
+                .buddy-txt {
+                    // c
+                    .column-txt-d;
+                    
+                    h2{
+                        .column-h2;
+                    }
+
+                    p{
+                        .column-p;
+                    }
+                }
+
+                .swap-txt {
+                    // 
+                    .column-txt-d;
+
+                    h2{
+                        .column-h2;
+                    }
+
+                    p{
+                        .column-p;
+                    }
+                }
+
+                .swap-img {
+                    background-image: url(../IMG/index-img/princess.jpg);
+                    .column-img;
+                }
+
+                .event-img {
+                background-image: url(../IMG/index-img/childcare.jpg);
+                .column-img;
+                }
+                
+                .event-txt {
+                    // c
+                    .column-txt-d;
+
+                    h2{
+                        .column-h2;
+                    }
+
+                    p{
+                        .column-p;
+                    }
+                }
+            }
+        }
+    }
+
+    .row :nth-child(1) {order: 1;}
+    .row :nth-child(2) {order: 4;}
+    .row :nth-child(3) {order: 2;}
+    .row :nth-child(4) {order: 3;}
+    .row :nth-child(5) {order: 6;}
+    .row :nth-child(6) {order: 5;}
+}
   
 
 
