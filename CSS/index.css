@@ -407,12 +407,12 @@ label,
   background-color: #1A8AC8;
 }
 .intro h1 {
-  text-align: center;
-  font-size: 3rem;
   font-family: 'new_walt_disney_uiregular';
-  padding-top: 1.5rem;
-  margin: 15px 0px;
   color: #F6FAFD;
+  font-size: 3rem;
+  padding-top: 1.5rem;
+  text-align: center;
+  margin: 15px 0px;
 }
 .intro p {
   text-align: center;
